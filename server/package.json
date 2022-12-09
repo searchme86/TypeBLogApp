@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon"
+    "tscWatch": "tsc -w",
+    "nodemon": "nodemon",
+    "start": "npm-run-all tscWatch nodemon"
   },
   "keywords": [],
   "author": "",
