@@ -1,1 +1,3 @@
 # TypeBlogApp
+
+# Strucrue
