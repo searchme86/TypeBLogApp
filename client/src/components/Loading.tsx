@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 export interface ILoadingProps {
   dotType?: string;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 function Loading(props: ILoadingProps) {

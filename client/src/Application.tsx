@@ -97,9 +97,9 @@ function Application() {
               key={index}
               path={route.path}
               element={
-                <route.component />
-                // <AuthRoute>
-                // </AuthRoute>
+                <AuthRoute>
+                  <route.component />
+                </AuthRoute>
               }
             />
           );

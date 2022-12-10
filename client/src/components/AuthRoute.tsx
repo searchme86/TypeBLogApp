@@ -1,4 +1,10 @@
-import React, { useContext, ReactElement, useState, useEffect } from 'react';
+import React, {
+  useContext,
+  ReactElement,
+  ReactNode,
+  useState,
+  useEffect,
+} from 'react';
 import UserContext from '../contexts/user';
 import logging from '../Config/logging';
 import { useNavigate } from 'react-router-dom';
@@ -6,7 +12,8 @@ import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 interface IAuthRoute {
   // children: ReactElement | null;
-  children: ReactElement | null;
+  // children: ReactElement | null;
+  children: ReactNode;
 }
 
 function AuthRoute({ children }: IAuthRoute) {
